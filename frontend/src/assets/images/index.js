@@ -18,8 +18,18 @@ import FaqMb from "./faq-mb.svg";
 import TeamLg from "./team-lg.svg";
 import TeamMd from "./team-md.svg";
 import TeamMb from "./team-mb.svg";
-
+import ContactLg from "./contact-lg.svg";
+import ContactDat from "./contact-dat.svg";
+import FacebookLogo from "./facebook.svg";
+import ContactThu from "./contact-thu.svg";
+import ContactThuy from "./contact-thuy.svg";
+import ContactNq from "./contact-nq.svg";
+import ContactKq from "./contact-kq.svg";
 export {
+  ContactKq,
+  ContactNq,
+  ContactThuy,
+  ContactThu,
   Background1,
   LogoTanHoa,
   Pic1,
@@ -40,4 +50,7 @@ export {
   TeamLg,
   TeamMb,
   TeamMd,
+  ContactLg,
+  ContactDat,
+  FacebookLogo,
 };

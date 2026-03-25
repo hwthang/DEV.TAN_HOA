@@ -4,6 +4,13 @@ import {
   AlbumMb,
   AlbumMd,
   Background1,
+  ContactDat,
+  ContactKq,
+  ContactLg,
+  ContactNq,
+  ContactThu,
+  ContactThuy,
+  FacebookLogo,
   FaqLg,
   FaqMb,
   FaqMd,
@@ -29,6 +36,7 @@ const MENU = [
   { id: "team", label: "Đội hình" },
   { id: "timeline", label: "Lịch trình" },
   { id: "album", label: "Thư viện" },
+  { id: "contact", label: "Liên hệ" },
 ];
 
 const SECTIONS = [
@@ -53,26 +61,25 @@ const App = () => {
       <div className="sticky top-0 z-90 h-0 w-full transition-all duration-[500ms]">
         <div className="absolute top-0 h-24 w-full bg-[#00003F]/90 backdrop-blur-sm shadow-md">
           <div className="h-full w-full flex items-center justify-between px-8 lg:px-16">
-            <div className="h-20 w-full flex items-center justify-start gap-4" onClick={() => handleScrollToId("hero")}>
+            <div
+              className="h-20 w-full flex items-center justify-start gap-4"
+              onClick={() => handleScrollToId("hero")}
+            >
               <img src={LogoTanHoa} className="h-full object-contain" />
             </div>
             <div className="hidden lg:flex w-full items-center justify-end gap-8 text-white">
               {MENU.map((item) => (
                 <div key={item.id}>
-                  <button onClick={() => handleScrollToId(item.id)} className="cursor-pointer font-semibold">
+                  <button
+                    onClick={() => handleScrollToId(item.id)}
+                    className="cursor-pointer font-semibold"
+                  >
                     {item.label}
                   </button>
                 </div>
               ))}
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
-                target="blank"
-                className="cursor-pointer font-semibold"
-              >
-                Liên hệ
-              </a>
             </div>
-            <div className="flex lg:hidden text-white ">
+            <div className="flex lg:hidden text-white cursor-pointer">
               {openMenu ? (
                 <div onClick={handleCloseMenu}>
                   <X />
@@ -93,19 +100,11 @@ const App = () => {
               <button
                 key={item.id}
                 onClick={() => handleScrollToId(item.id)}
-                className="text-left px-4 py-2 hover:bg-blue-950 transition"
+                className="text-left px-4 py-2 hover:bg-blue-950 transition cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
-            <div className="text-left px-4 py-2 hover:bg-blue-950 transition">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
-                target="blank"
-              >
-                Liên hệ
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -138,16 +137,27 @@ bg-clip-text text-transparent font-gajra"
               <div className="text-white md:text-xl font-semibold">
                 Nhiệt huyết - Xung kích - Tình nguyện - Sáng tạo
               </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
-                target="blank" className="w-fit flex gap-2 border px-8 h-12 items-center border-white rounded-full text-white font-semibold md:text-xl hover:bg-white hover:text-[#0000A0] transition-all duration-800">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
+                target="blank"
+                className="w-fit flex gap-2 border px-8 h-12 items-center border-white rounded-full text-white font-semibold md:text-xl hover:bg-white hover:text-[#0000A0] transition-all duration-800"
+              >
                 Tham gia đội hình ngay bây giờ <ChevronRight size={32} />
               </a>
             </div>
             <div className="absolute bottom-10 left-10 bg-[#00003F]/80 h-16 px-12 flex items-center font-semibold rounded-full text-white cursor-pointer">
-              <span className="hidden md:inline"  onClick={() => handleScrollToId("faq")}>Câu hỏi thường gặp </span>
+              <span
+                className="hidden md:inline"
+                onClick={() => handleScrollToId("faq")}
+              >
+                Câu hỏi thường gặp{" "}
+              </span>
               <CircleQuestionMark className="md:hidden" />
             </div>
-            <div className="absolute bottom-10 right-10 bg-[#00003F]/80 h-16 px-12 flex items-center font-semibold rounded-full text-white cursor-pointer"  onClick={() => handleScrollToId("highlight")}>
+            <div
+              className="absolute bottom-10 right-10 bg-[#00003F]/80 h-16 px-12 flex items-center font-semibold rounded-full text-white cursor-pointer"
+              onClick={() => handleScrollToId("highlight")}
+            >
               <span className="hidden md:inline"> Hoạt động tiêu biểu</span>{" "}
               <Flame className="md:hidden" />
             </div>
@@ -233,6 +243,77 @@ bg-clip-text text-transparent font-gajra"
             />
           </div>
         ))}
+      </div>
+      <div id="contact" className="w-full bg-[#000BA8] pl-12 py-16">
+        <div className=" lg:grid grid-cols-6 md:px-24 px-16 flex md:gap-12 gap-8 flex-col">
+          <div className="col-span-6 h-24 w-full flex-shrink-0  flex justify-center pr-12">
+            <img src={LogoTanHoa} className="h-full w-full object-contain" />
+          </div>
+          <div className="col-span-2 w-full flex-shrink-0 col-start-2 flex justify-center">
+            <img src={ContactDat} className="h-full w-full object-contain" />
+          </div>
+          <div className="col-span-2 w-full flex-shrink-0 flex justify-center">
+            <img src={ContactThu} className="h-full w-full object-contain" />
+          </div>
+          <div className="row-start-3 col-span-2 w-full flex-shrink-0 flex justify-center">
+            <img src={ContactThuy} className="h-full w-full object-contain" />
+          </div>
+          <div className="col-span-2 w-full flex-shrink-0">
+            <img
+              src={ContactNq}
+              className="h-full w-full object-contain flex justify-center"
+            />
+          </div>
+          <div className="col-span-2 w-full flex-shrink-0 flex justify-center">
+            <img
+              src={ContactKq}
+              className="h-full w-full object-contain flex justify-center"
+            />
+          </div>
+          <div className="col-span-2 w-full flex-shrink-0 col-start-2 flex md:justify-center items-center gap-2 text-white font-semibold">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 49.4 512 399.42"
+              className="h-10 w-10"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <g fill-rule="nonzero">
+                  <path
+                    fill="#4285f4"
+                    d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z"
+                  />
+                  <path
+                    fill="#34a853"
+                    d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z"
+                  />
+                  <path
+                    fill="#fbbc04"
+                    d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z"
+                  />
+                </g>
+                <path
+                  fill="#ea4335"
+                  d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z"
+                />
+                <path
+                  fill="#c5221f"
+                  fill-rule="nonzero"
+                  d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z"
+                />
+              </g>
+            </svg>
+
+            <div>Gmail: tanhoatuoitre@gmail.com</div>
+          </div>
+          <a
+            href="https://www.facebook.com/profile.php?id=61579516041384"
+            target="blank"
+            className="col-span-2 w-full flex-shrink-0 flex md:justify-center items-center gap-2 text-white font-semibold"
+          >
+            <img src={FacebookLogo} className="h-10 w-10 object-contain" />
+            <div>Facebook: Tuổi trẻ Tân Hòa</div>
+          </a>
+        </div>
       </div>
     </div>
   );
