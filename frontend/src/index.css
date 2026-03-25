@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Gajra";
+  src: url("./assets/fonts/GajrajOne-Regular.ttf");
+}
+
+.font-gajra {
+  font-family: "Gajra", sans-serif;
+}
