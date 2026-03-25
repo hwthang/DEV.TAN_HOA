@@ -65,7 +65,7 @@ const App = () => {
                 </div>
               ))}
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfT2w5YJTGliumxuzx8WI1ZCI_cxrO6KqJ6kn86hZ8vCit-mw/viewform?usp=dialog"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
                 target="blank"
                 className="cursor-pointer font-semibold"
               >
@@ -100,7 +100,7 @@ const App = () => {
             ))}
             <div className="text-left px-4 py-2 hover:bg-blue-950 transition">
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfT2w5YJTGliumxuzx8WI1ZCI_cxrO6KqJ6kn86hZ8vCit-mw/viewform?usp=dialog"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
                 target="blank"
               >
                 Liên hệ
@@ -138,7 +138,7 @@ bg-clip-text text-transparent font-gajra"
               <div className="text-white md:text-xl font-semibold">
                 Nhiệt huyết - Xung kích - Tình nguyện - Sáng tạo
               </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfT2w5YJTGliumxuzx8WI1ZCI_cxrO6KqJ6kn86hZ8vCit-mw/viewform?usp=dialog"
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf23eKXxUlXN1muzNQ5KUKvVkkgZpp5TOEHcYBumfY-I4TNig/viewform"
                 target="blank" className="w-fit flex gap-2 border px-8 h-12 items-center border-white rounded-full text-white font-semibold md:text-xl hover:bg-white hover:text-[#0000A0] transition-all duration-800">
                 Tham gia đội hình ngay bây giờ <ChevronRight size={32} />
               </a>
