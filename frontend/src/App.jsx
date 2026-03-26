@@ -117,7 +117,7 @@ const App = () => {
           <div className="h-full flex items-center justify-center">
             <div className="flex flex-col items-center justify-center gap-6">
               <div
-                className="uppercase text-3xl md:text-5xl lg:text-6xl bg-linear-to-r bg-gradient-to-r 
+                className="uppercase text-2xl md:text-5xl lg:text-6xl bg-linear-to-r bg-gradient-to-r 
 
 
 from-[#0046C8] 
@@ -169,7 +169,7 @@ bg-clip-text text-transparent font-gajra"
         >
           <div className="md:grid grid-cols-3 h-full gap-8 flex flex-col">
             <div className="col-span-2 flex bg-white flex items-center justify-center rounded-xl min-h-24">
-              <div className="text-4xl lg:text-7xl font-extrabold uppercase py-8 font-gajra text-[#0000A0]">
+              <div className="text-3xl lg:text-7xl font-extrabold uppercase py-8 font-gajra text-[#0000A0]">
                 Tháng này có gì?
               </div>
             </div>
