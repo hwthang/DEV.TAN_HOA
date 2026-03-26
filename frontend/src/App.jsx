@@ -173,16 +173,16 @@ bg-clip-text text-transparent font-gajra"
                 Tháng này có gì?
               </div>
             </div>
-            <div className="row-span-2  relative">
+            <div className="row-span-2 relative order-3 md:order-none">
               <img
                 src={Pic1}
-                className="h-full w-full object-cover rounded-xl"
+                className="h-full w-full object-cover rounded-xl "
               />
               <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 w-32 flex items-center justify-center h-10 bg-[#0000A0] rounded-lg font-semibold text-white">
                 Tình nguyện
               </div>
             </div>
-            <div className=" row-span-3 rounded-xl relative">
+            <div className=" row-span-3 rounded-xl relative order-1 md:order-none">
               <img
                 src={Pic2}
                 className="h-full w-full object-cover rounded-xl"
@@ -191,7 +191,7 @@ bg-clip-text text-transparent font-gajra"
                 Nhiệt huyết
               </div>
             </div>
-            <div className=" row-span-2 relative">
+            <div className=" row-span-2 relative order-2 md:order-none">
               <img
                 src={Pic3}
                 className="h-full w-full object-cover rounded-xl"
@@ -200,7 +200,7 @@ bg-clip-text text-transparent font-gajra"
                 Xung kích
               </div>
             </div>
-            <div className="h-60 relative">
+            <div className="h-60 relative order-3 md:order-none">
               <div className="h-60 overflow-hidden rounded-xl">
                 <img
                   src={Pic4}
@@ -212,7 +212,7 @@ bg-clip-text text-transparent font-gajra"
                 Sáng tạo
               </div>
             </div>
-            <div className="col-span-2 text-blue-800 font-semibold">
+            <div className="col-span-2 text-blue-800 font-semibold order-4 md:order-none text-justify">
               Thiết thực chào mừng kỷ niệm 95 năm Ngày thành lập Đoàn TNCS Hồ
               Chí Minh (26/3/1931 - 26/3/2026). Tháng 3 này, hãy cùng Chi đoàn
               khu phố Tân Hòa thắp lên ngọn lửa nhiệt huyết, sẵn sàng xung kích
@@ -244,9 +244,9 @@ bg-clip-text text-transparent font-gajra"
           </div>
         ))}
       </div>
-      <div id="contact" className="w-full bg-[#000BA8] pl-12 py-16">
-        <div className=" lg:grid grid-cols-6 md:px-24 px-16 flex md:gap-12 gap-8 flex-col">
-          <div className="col-span-6 h-24 w-full flex-shrink-0  flex justify-center pr-12">
+      <div id="contact" className="w-full bg-[#000BA8] px-8 py-16  lg:pl-24">
+        <div className=" lg:grid grid-cols-6 md:px-24 flex md:gap-12 gap-8 flex-col border">
+          <div className="col-span-6 h-24 w-full flex-shrink-0  flex justify-center">
             <img src={LogoTanHoa} className="h-full w-full object-contain" />
           </div>
           <div className="col-span-2 w-full flex-shrink-0 col-start-2 flex justify-center">
@@ -270,7 +270,7 @@ bg-clip-text text-transparent font-gajra"
               className="h-full w-full object-contain flex justify-center"
             />
           </div>
-          <div className="col-span-2 w-full flex-shrink-0 col-start-2 flex md:justify-center items-center gap-2 text-white font-semibold">
+          <div className="col-span-2 w-full flex-shrink-0 col-start-2 flex flex-col md:flex-row md:justify-center items-center gap-2 text-white font-semibold">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 49.4 512 399.42"
@@ -303,15 +303,15 @@ bg-clip-text text-transparent font-gajra"
               </g>
             </svg>
 
-            <div>Gmail: tanhoatuoitre@gmail.com</div>
+            <div>tanhoatuoitre@gmail.com</div>
           </div>
           <a
             href="https://www.facebook.com/profile.php?id=61579516041384"
             target="blank"
-            className="col-span-2 w-full flex-shrink-0 flex md:justify-center items-center gap-2 text-white font-semibold"
+            className="col-span-2 w-full flex-shrink-0 flex md:justify-center items-center gap-2 text-white font-semibold flex-col md:flex-row"
           >
             <img src={FacebookLogo} className="h-10 w-10 object-contain" />
-            <div>Facebook: Tuổi trẻ Tân Hòa</div>
+            <div>Tuổi trẻ Tân Hòa</div>
           </a>
         </div>
       </div>
